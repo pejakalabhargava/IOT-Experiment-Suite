@@ -80,12 +80,12 @@ public class PlugtestServer extends CoapServer {
         // create server
         try {
             CoapServer server = new PlugtestServer();
-          //  Observe ob1 = new Observe();
+            //Observe ob1 = new Observe();
             // ETSI Plugtest environment
-//            server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("::1", port)));
-//            server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("127.0.0.1", port)));
-//            server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("2a01:c911:0:2010::10", port)));
-//            server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("10.200.1.2", port)));
+            //server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("::1", port)));
+            //server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("127.0.0.1", port)));
+            //server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("2a01:c911:0:2010::10", port)));
+            //server.addEndpoint(new CoAPEndpoint(new InetSocketAddress("10.200.1.2", port)));
             
             server.start();
             

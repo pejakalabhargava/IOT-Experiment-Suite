@@ -58,7 +58,7 @@ public class Observe extends CoapResource {
 
 		// Set timer task scheduling
 		Timer timer = new Timer();
-		timer.schedule(new TimeTask(), 0, 5000);
+		timer.schedule(new TimeTask(), 100, 5000);
 	}
 
 	/*
@@ -75,6 +75,9 @@ public class Observe extends CoapResource {
 			notification_count++;
 			System.out.println("notification being sent" + notification_count);
 			changed();
+			if(notification_count==10) {
+				this.cancel();
+			}
 		}
 	}
 
